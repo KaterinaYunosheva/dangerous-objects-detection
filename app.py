@@ -15,7 +15,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['PROCESSED_FOLDER'], exist_ok=True)
 
 # Загрузка модели YOLOv8
-model = YOLO('yolov8n.pt')  # Используйте свою дообученную модель для ножей и пистолетов
+model = YOLO('yolov8n.pt')
 
 # Подключение к базе данных
 def init_db():
